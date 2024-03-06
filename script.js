@@ -1,3 +1,5 @@
+// export {globalVariable};
+
 
 qns = JSON.parse(localStorage.getItem("qns"))
 console.log(qns)
@@ -50,16 +52,24 @@ function GetScores(){
     console.log(risk_score)
     console.log(diversity_score)
     console.log(stability_score)
-    rsk_str = JSON.stringify(risk_score)
-    localStorage.setItem("rsk",rsk_str)
-    stab_str = JSON.stringify(stability_score)
-    localStorage.setItem("stab",stab_str)
-    diver_str = JSON.stringify(diversity_score)
-    localStorage.setItem("diver",diver_str)
 
-    // console.log(risky)
-    // console.log(diver)
-    // console.log(staby)
+    // globalVariable={
+    //   rsk: risk_score,
+    //   stab: stability_score,
+    //   diver:diversity_score
+    // };
+    
+
+    // rsk_str = JSON.stringify(risk_score)
+    sessionStorage.setItem("rsk",risk_score)
+    // stab_str = JSON.stringify(stability_score)
+    sessionStorage.setItem("stab",stability_score)
+    // diver_str = JSON.stringify(diversity_score)
+    sessionStorage.setItem("diver",diversity_score)
+
+    console.log(risky)
+    console.log(diver)
+    console.log(staby)
     
 }
 
