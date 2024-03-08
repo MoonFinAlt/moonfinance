@@ -67,6 +67,8 @@ function GetScores(){
     // diver_str = JSON.stringify(diversity_score)
     sessionStorage.setItem("diver",diversity_score)
 
+    sessionStorage.setItem('risky',risky)
+    
     console.log(risky)
     console.log(diver)
     console.log(staby)
