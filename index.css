@@ -132,6 +132,9 @@ nav ul li a:hover {
   background-color: #504e4e;
   border: 1px solid white;
 }
+.form_main button:focus{
+  background-color: rgba(4, 85, 191, 1);
+}
 
 .form_main .form_active {
   margin-top: 100px;
