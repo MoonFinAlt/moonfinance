@@ -10,30 +10,6 @@
 </head>
 <body>
     <header>
-        <div class="container" onclick="myFunction(this)" onclick="openNav()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-          <script>
-            function myFunction(x) {
-              x.classList.toggle("change");
-            }
-                      function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-          </script>
         <a href="#"><img src="./images/Frame 148.svg" alt="Moon Finance Logo"></a>
         
         <nav>
@@ -51,13 +27,88 @@
             </ul>
         </nav>
     </header>
-   
-    <div class="chart-container">
-      <canvas id="myChart"></canvas>
+    <div class="dashboard_main" style="display: flex; justify-content: center; vertical-align: top;">
+        <div class="dashboard_left">
+            <h1>Your Assets</h1>
+            <div style="display: flex; justify-content: space-between; width: 60%;">
+                <div>
+                    <h3>Price Invested</h3>
+                    <p style="color:#1F7AE0; margin-top: 0px;">5000 Rs</p>
+                    <br>
+                    <h3>Assets</h3>
+                    <p style="margin-top: 0px;">3</p>
+                </div>
+                <div>
+                    <h3>CAGR</h3>
+                    <p style="color:#1F7AE0; margin-top: 0px;">9.23%</p>
+                    <br>
+                    <h3>Risk Profile</h3>
+                    <p style="color: #F7AD19; margin-top: 0px;">Mid</p>
+                </div>
+            </div>
+            <h2 style="margin-bottom: 0px;">About the allocation</h2>
+            <p style="margin-top: 0px; margin-bottom: 0px;">Lorem ipsum dolor sit amet consectetur. Nec mauris ut id quam netus. Pellentesque sed aliquet tortor auctor dictum sodales leo. Sed donec ut laoreet rhoncus pulvinar. Mauris et ac nisi in ipsum sed etiam.</p>
+            <p style="margin-top: 0px;">Pellentesque sed aliquet tortor auctor dictum sodales leo.Sed donec ut laoreet rhoncus pulvinar.</p>
+        </div>
+        <div class="dashboard_right" style="margin: 0px; padding: 0px;">
+        <div class="chart-container" style="height: 150%; width: 150%;">
+        <canvas id="myChart" ></canvas>
+        </div>
+        <div style="height: 150%; width: 150%;">
+            <div style="display: flex; justify-content: space-around; ">
+            <p style="margin: 0px; padding: 0px;">Equity</p>
+            <p style="margin: 0px; padding: 0px;">Debt</p></div>
+            <button>Customize Assets</button>
+            <p style="font-size: small; color: #CBCBCB;">You can edit your assets before investing. </p>
+        </div>
+        </div>
     </div>
-
+    <h1 style="font-size: 4rem; margin-left: 9vh; margin-top: 10rem;">Your Basket</h1>
+    <img src="./images/YBF.svg" alt="" style="margin-left: 9vh;">
+    <footer>
+        <div class="footer">
+            <div class="first">
+              <a href="#"><img src="./images/Frame 148.svg" alt="Moon Finance Logo"></a>
+              <h3><img src="images/phone.png" style="height: 15px; width: 15px;">+919367754427</h3>
+              <h3><img src="images/mail.svg" style="height: 15px; width: 15px;">shrey.moonfinance@gmail.com</h3>
+            </div>
+            <div class="second">
+              <p>The Suggested ratios are for research purposes only.</p><p>KONAI TECH PVT.LTD</p> 
+              <p>CIN: U66309GJ2024PTC147792</p>
+            </div>
+            <div class="third">
+              <table>
+                  <tr>
+                      <th>
+                          Home
+                      </th>
+                  </tr>
+                  <tr>
+                      <th>
+                          Services
+                      </th>
+                  </tr>
+                  <tr>
+                      <th> 
+                          Attribution
+                      </th>
+                  </tr>
+                  <tr>
+                      <th>
+                          About
+                      </th>
+                  </tr>
+              </table>
+            </div>
+            <div class="fourth">
+              <a href="#"><img src="./images/Vector.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
+              <a href="#"><img src="./images/insta.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
+              <a href="#"><img src="./images/x.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
+              <a href="#"><img src="./images/face.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
+            </div>
+            </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
     <script src="dashboard.js"></script>
 
 </body>
