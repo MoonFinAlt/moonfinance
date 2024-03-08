@@ -6,6 +6,7 @@
     <title>Moon Finance</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="script.js">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,47 +32,46 @@
         </nav>
     </header>  
     <div class="main">
-        <script>
-            var main = document.querySelector(".main");
 
-            main.addEventListener("mousemove", function (e) {
-            main.style.backgroundPositionX = -e.offsetX * 0.1 + "px";
-            main.style.backgroundPositionY = -e.offsetY * 0.05 + "px";
-            });
+<script>
+    var main = document.querySelector(".main");
+    var bool = false;
 
-            //reset the background positions back to the original on mouseleave
 
-            main.addEventListener("mouseleave", function () {
-            main.style.backgroundPosition = "0px 0px";
-            });
-            console.log("working")
-            let qns = {
-                1:'',
-                2:'',
-                3:'',
-                4:'',
-                5:'',
-                6:'',
-                7:'',
-                8:'',
-                9:'',
-            }
-            qns_str = JSON.stringify(qns)
-            localStorage.setItem("qns",qns_str)
-        </script>
-        <div style="display: flex; justify-content: center;">
-        <div style="width: 807px;">
-        <h1>
-            MOON<br>FINANCE
+    main.addEventListener("mousemove", function (e) {
+    main.style.backgroundPositionX = -e.offsetX * 0.1 + "px";
+    main.style.backgroundPositionY = -e.offsetY * 0.05 + "px";
+    });
+
+    //reset the background positions back to the original on mouseleave
+
+    main.addEventListener("mouseleave", function () {
+    main.style.backgroundPosition = "0px 0px";
+    });
+    console.log("working")
+    let qns = {
+        1:'',
+        2:'',
+        3:'',
+        4:'',
+        5:'',
+        6:'',
+        7:'',
+        8:'',
+        9:'',
+    }
+    qns_str = JSON.stringify(qns)
+    localStorage.setItem("qns",qns_str)
+</script>
+
+        <h1 style="line-height: 1; margin-top: 0px;
+        padding-top: 100px; height: 207px;">
+            MOON <br> FINANCE
         </h1>
         <h2>
             AI investment advisory for GenZ
         </h2>
-        <a href="./form1.html" class="start_investing">Start Investing &#8594;</a></div>
-        <div class="main_ani">
-                <div class="moon">
-                </div>
-        </div></div>
+        <a href="./form1.html" class="start_investing">Start Investing &#8594;</a>
         <div class="main_2">
             <div class="main_2_text">
                 <h3>Our Solution</h3>
@@ -81,66 +81,62 @@
                     confidently build wealth and bridge the knowledge gap, turning 
                     them into knowledgeable wealth builders.</p>
             </div>
-            <div class="main_2_img">
+            <div class="main_2_img" style="margin-left: 250px;">
                 <img src="./images/iPhone 13 Pro.png">
             </div>
         </div>
-        <div class="main_3">
-            <div class="main_3_text">
-                <h3>We are Recognized by</h3>
+        <div style="display: flex; justify-content: center;">
+            <div class="main_3" >
+                <div class="main_3_text">
+                    <h3>We are Recognized by</h3>
+                </div>
+                <div class="main_3_images">
+                    <img src="./images/micro.png">
+                    <img src="./images/ecount.png">
+                    <img src="./images/vit.png">
+                </div>
             </div>
-            <div class="main_3_images">
-                <img src="./images/micro.png">
-                <img src="./images/ecount.png">
-                <img src="./images/vit.png">
             </div>
-        </div>
-        <hr>
         <div class="faq">
+            <div style="display: flex; justify-content: center;">
+                <div>
             <h2>-FAQs</h2>
             <h1>Questions ??
-                Look Here .</h1>
+                Look Here .</h1></div></div>
             <ul class="accordion">
                 <li>
-                    <input type="radio" name="accordion" id="first">
+                    <input type="checkbox" name="accordion" id="first">
                     <label for="first">How does Moon Finance work ?</label>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum hic aliquid in magni delectus, tempora quo quae, a ut molestiae animi non quam voluptatum expedita dignissimos facilis cupiditate debitis perferendis. Tempore, eos distinctio?</p>
+                        <p>Moon Finance uses a combination of AI & deep research algorithms by our research analysts to give you a portfolio of assets which are the best suited for your investment needs.</p>
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="accordion" id="second">
+                    <input type="checkbox" name="accordion" id="second">
                     <label for="second">Why should I use Moon Finance?</label>
                     <div class="content">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque sint nam accusantium laborum nemo velit delectus eius assumenda odit placeat enim asperiores corporis labore rem amet facilis nesciunt cum! Facere laudantium ut nam.</p>
+                        <p>Moon Finance is developed in a way to maximize your returns & minimize your risks. It provides you with SEBI certified Investment advisory.</p>
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="accordion" id="third">
+                    <input type="checkbox" name="accordion" id="third">
                     <label for="third">How is my money investment?</label>
                     <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor repudiandae iusto amet eligendi, quas explicabo. Tempora voluptate necessitatibus quae nostrum quas dicta? Modi dolores non excepturi minima quas placeat minus dicta in. Voluptatem, laboriosam.</p>
+                        <p>The money is invested through your broker.</p>
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="accordion" id="fourth">
+                    <input type="checkbox" name="accordion" id="fourth">
                     <label for="fourth">Where is my money invested?</label>
                     <div class="content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro neque eveniet, officiis dolor vitae debitis vero eum commodi libero dolorum ipsam blanditiis velit tempore corporis cupiditate odit excepturi dolores sed culpa. Soluta, quae cupiditate.</p>
+                        <p>Your money is invested in the portfolio made by Moon Finance based on your investment profile.</p>
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="accordion" id="fifth">
+                    <input type="checkbox" name="accordion" id="fifth">
                     <label for="fifth">Is my money safe with Moon Finance?</label>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, adipisci.</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="accordion" id="seventh">
-                    <label for="seventh">Is it free?</label>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quo ullam nemo laboriosam veniam laudantium tempora ex cumque, magnam eligendi dolores illo doloremque adipisci vitae provident in vero accusantium dolore voluptate assumenda magni libero!</p>
+                        <p>We do not keep your money, the money is directly invested through your broker and the ETFs are transferred to your demat account, i.e you have the full control of your investments.</p>
                     </div>
                 </li>
             </ul>
@@ -153,7 +149,7 @@
             </div>
             <div class="main_5_text">
                 <h3>Sounds Amazing?</h3>
-                <button>SIGN UP!</button>
+                <button>JOIN NOW!</button>
             </div>
         </div>
     </div>
@@ -162,42 +158,41 @@
     <div class="footer">
       <div class="first">
         <a href="#"><img src="./images/Frame 148.svg" alt="Moon Finance Logo"></a>
-        <h3><img src="images/phone.png" style="height: 15px; width: 15px;">+919367754427</h3>
+        <h3><img src="images/phone.png" style="height: 15px; width: 15px;">+916353332891</h3>
         <h3><img src="images/mail.svg" style="height: 15px; width: 15px;">shrey.moonfinance@gmail.com</h3>
       </div>
-      <div class="second">
-        <p>The Suggested ratios are for research purposes only.</p><p>KONAI TECH PVT.LTD</p> 
+      <div class="second" style="line-height: 0.9;">
+        <p>The Suggested ratios are for research purposes only.</p><p>KOINAI TECH PVT.LTD</p> 
         <p>CIN: U66309GJ2024PTC147792</p>
       </div>
       <div class="third">
         <table>
             <tr>
-                <th>
+                <td>
                     Home
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td>
                     Services
-                </th>
+                </td>
             </tr>
             <tr>
-                <th> 
+                <td> 
                     Attribution
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td>
                     About
-                </th>
+                </td>
             </tr>
         </table>
       </div>
       <div class="fourth">
-        <a href="#"><img src="./images/Vector.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
+        <a href="#"><img src="./images/Vector.svg" alt="linkedin" style="height: 20px; width: 20px;"></a>
         <a href="#"><img src="./images/insta.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
-        <a href="#"><img src="./images/x.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
-        <a href="#"><img src="./images/face.svg" alt="instagram" style="height: 20px; width: 20px;"></a>
+        <a href="#"><img src="./images/x.svg" alt="x" style="height: 20px; width: 20px;"></a>
       </div>
       </div>
   </footer>
