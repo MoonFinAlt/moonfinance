@@ -3,7 +3,10 @@ const ctx = document.getElementById('myChart').getContext('2d');
 rsk = JSON.parse(sessionStorage.getItem("rsk"))
 stab = JSON.parse(sessionStorage.getItem("stab"))
 diver = JSON.parse(sessionStorage.getItem("diver"))
+risky = (localStorage.getItem("risky"))
 
+rick = document.getElementById("rick")
+rick.innerHTML= risky
 
 rsk = rsk
 stab = stab
