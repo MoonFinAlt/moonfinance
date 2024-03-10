@@ -33,20 +33,7 @@
     <div class="main">
 
 <script>
-    var main = document.querySelector(".main");
-    var bool = false;
-
-
-    main.addEventListener("mousemove", function (e) {
-    main.style.backgroundPositionX = -e.offsetX * 0.1 + "px";
-    main.style.backgroundPositionY = -e.offsetY * 0.05 + "px";
-    });
-
-    //reset the background positions back to the original on mouseleave
-
-    main.addEventListener("mouseleave", function () {
-    main.style.backgroundPosition = "0px 0px";
-    });
+    
     console.log("working")
     let qns = {
         1:'',
