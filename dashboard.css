@@ -45,17 +45,17 @@ html{
     position: relative;
     z-index: -1;
 }
-.lock{
+.lock {
     margin: auto;
-    margin-top: 200px;
-    width: 50%;
-    height: 80%;
+    margin-top: 0px;
+    width: 40%;
+    height: 63%;
     padding: 10px;
     display: block;
     justify-content: center;
     background-color: black;
     position: absolute;
-    top: 200%;
+    top: 190%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
