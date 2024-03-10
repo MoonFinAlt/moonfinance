@@ -51,6 +51,21 @@ nav ul li a:hover {
   background-position: 0 0;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainvec {
+  max-width: 30%;
+  margin-left: -200px;
+}
+
+
+
+
+
+
 .main h1 {
   display: flex;
   justify-content: left;
