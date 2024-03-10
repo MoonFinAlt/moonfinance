@@ -16,7 +16,7 @@ html{
 .dashboard_left{
  float: right;
  width: 55%;
- display: grid;
+ display: grid; 
  place-content: center;
 }
 .dashboard_right{
