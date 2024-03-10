@@ -8,6 +8,19 @@ risky = (sessionStorage.getItem("risky"))
 rick = document.getElementById("rick")
 rick.innerHTML= risky
 
+var cagr = 0;
+
+if(risky=="Low Risk"){
+    cagr = "7%-10%"
+}else if(risky=="Mid Risk"){
+    cagr = "10%-12%"
+}else if(risky=="High Risk"){
+    cagr = "12%-15%"
+}
+caggr = document.getElementById("caggr")
+caggr.innerHTML = cagr
+
+
 rsk = rsk
 stab = stab
 diver = diver
