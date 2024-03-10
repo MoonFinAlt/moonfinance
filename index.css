@@ -91,10 +91,13 @@ nav ul li a:hover {
 
 
 .form_main {
-  margin-top: 100px;
-  margin-bottom: 200px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  display: flex;
+  flex-direction: column;
   margin-left: 200px;
   margin-right: 200px;
+  height: fit-content;
 }
 .form_main a {
   color: white;
@@ -108,15 +111,16 @@ nav ul li a:hover {
   border-radius: 15px;
 }
 .form_main p {
-  font-size: 24.36px;
+  font-size: 20px;
 }
 .form_main h1 {
-  font-size: 43px;
+  font-size: 25px;
 }
 .form_main .form_buttons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: fit-content;
   font-size: 26px;
 }
 .form_main button{
@@ -143,7 +147,6 @@ nav ul li a:hover {
   background-color: #1f7ae0;
 }
 .form_main .form_active {
-  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
